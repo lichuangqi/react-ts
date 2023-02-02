@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import styles from './Robot.module.css';
 import { appContext } from '../AppState';
 import { useAddToCart } from './AddToCart';
+// 自定义hook写法
 interface RobotProps {
     id: number,
     name: string,

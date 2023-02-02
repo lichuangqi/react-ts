@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import styles from './Robot.module.css';
 import { appContext } from '../AppState';
 import withAddToCart from './AddToCart';
+//高阶组件写法
 export interface RobotProps {
   id: number,
   name: string,
