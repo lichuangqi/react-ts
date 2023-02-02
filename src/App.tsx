@@ -42,7 +42,7 @@ const App: React.FC = () => {
       <ShoppingCart />
       {!error || error !== '' && <div>网站出错：{error}</div>}
       {!loading ? (<div className={styles.robotList}>
-        {robotGallery.map((r, index) => index % 2 == 0 ? (<RobotDiscount key={r.id} id={r.id} name={r.name} email={r.email} />) : (<Robot key={r.id} id={r.id} name={r.name} email={r.email} />))}
+        {robotGallery.map((r, index) => index % 2 == 0 ? (<RobotDiscount key={r.id} addToCart={r.addToCart} id={r.id} name={r.name} email={r.email} />) : (<Robot key={r.id} id={r.id} name={r.name} email={r.email} />))}
       </div>) : (<h2>loading 加载中 ...</h2>)}
     </div>
   );
